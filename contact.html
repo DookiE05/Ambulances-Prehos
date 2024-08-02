@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRSA</title>
+
+    <script src="https://kit.fontawesome.com/0a591b8e22.js" crossorigin="anonymous"></script>
+
+    <meta name="description" content="Coopérative des Ambulanciers Armoricains: Transport Sanitaire en Ambulance, Véhicule Sanitaire Léger (VSL) dans les Côtes d'Armor (22).">
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/recruit.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="stylesheet" href="./styles/media.css">
+
+
+
+</head>
+<body>
+
+    <header id="header">
+        <div class="top-line">
+            <!-- <div class="join-us-ctnr">
+                <button class="btn"><a class="join" href="recrutement.html">REJOINDRE NOTRE ÉQUIPE</a></button>
+                <button class="btn number"><a href="tel:+33607622257">06 07 62 22 57</a></button>
+            </div> -->
+        </div>
+        
+        <div id="main-head">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="./media/logo.png" width="2033" height="542" alt="CTAQ : Coopérative des techniciens ambulanciers du Québec" id="logo" data-height-percentage="66" >
+                </a>
+            </div>
+
+            <nav id="nav">
+                <ul class="mh-ul">
+                    <!-- <li class="mh-li"><a href="#wtmrsa">PRÉAMBULE</a></li> -->
+                    <!-- <li class="mh-li"><a href="index.html">ACCUEIL</a></li> -->
+                    <!-- <li class="mh-li"><a href="#job">EMPLOIS</a></li> -->
+                    <!-- <li class="mh-li"><a href="#intership">STAGES</a></li> -->
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <div id="main-container" class="main-ctnr">
+        <div class="form-ctnr">
+
+            <h1 class="tt-ctnr">
+                <span><i class="fa-regular fa-envelope envelope"></i></span>
+                CONTACT
+            </h1>
+
+
+            <div class="container">
+                <form  class="form" onsubmit="sendEmail(); reset(); return false">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+        
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" required>
+        
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="telephone">Téléphone :</label>
+                    <input type="tel" id="telephone" name="telephone" required>
+        
+                    <label for="msg">Votre demande concerne :</label>
+                    <select id="msg" name="msg" required>
+                        <option value="" disabled selected>Veuillez sélectionner</option>
+                        <option value="ambulance">Transport en Ambulance</option>
+                        <option value="vsl">Transport en Véhicule Sanitaire Léger (VSL)</option>
+                        <option value="tpmr">Réclamation</option>
+                        <option value="autre">Autre (Veuillez préciser votre message)</option>
+                    </select>
+        
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+        
+                    <input type="submit" value="Envoyer">
+                </form>
+
+                <div class="form-img">
+                    
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div id="footerContainer"></div>
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+        function sendEmail(){
+            Email.send({
+                SecureToken : "235c6483-8fc2-41e5-8b0d-011ba49e9a5c",
+                To : 'melanieasp45@gmail.com',
+                From : "maxime.rlt26@gmail.com",
+                Subject : "This is the subject",
+                Body : "And this is the body"
+            }).then(
+            message => alert(message)
+            );
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+#recruit{
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: auto;
+    min-height: 90vh;
+    overflow-y: scroll;
+    overflow-y: hidden;
+    background: #f1f1f1;
+}
+/* WHATS THE MRSA */
+.whats-the-mrsa{
+    position: relative;
+    display: block;
+    width: 65%;
+    height: 85vh;
+    margin: 0 auto;
+    top: 5vh;
+    margin-bottom: 15vh;
+}
+.wtm-ctnr{
+    height: 95%;
+
+}
+.wtm-article :nth-child(n){
+    margin-left: 1vh;
+}
+.wtm-article h4{
+    font-size: 2rem;
+    margin-bottom: 3vh;
+    white-space: nowrap;
+    color: #2579E8;
+}
+.wtm-article p{
+    display: block;
+    margin-top: 1vh;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--main-blue);
+}
+.wtm-article ul{
+    font-size: 0.7vw;
+    padding-left: 1vw;
+    color: #333;
+}
+
+
+/* EMPLOIS */
+.job-ctnr{
+    position: relative;
+    display: block;
+    width: 65%;
+    height: 85%;
+    margin: 0 auto;
+    top: 5vh;
+    margin-bottom: 15vh;
+    /* background: #000; */
+}
+.job-ctnr h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+    border-bottom: 2px solid var(--global-yellow);
+    color: var(--main-blue);
+    padding: 1rem 0 1rem 0;
+}
+.job-list{
+    width: 75%;
+    height: 75%;
+    margin-top: 4vh;
+    list-style-type: none;
+    /* background: red; */
+}
+.job{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #99999938;
+}
+.job:nth-last-child(1){
+    border-bottom: none;
+}
+.job-title{
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom:.5rem;
+    margin-left: .5rem;
+}
+.job-title a{
+    color: #2579E8;
+}
+.job-date{
+    display: block;
+    width: 100%;
+    margin-bottom:.5rem;
+    margin-left: .5rem;
+    color: var(--color-text-a);
+    font-weight: 500;
+}
+.job-regions{
+    display: block;
+    width: 100%;
+    margin-bottom:.5rem;
+    margin-left: .5rem;
+    color: var(--color-text-a);
+    font-weight: 500;
+}
+.job-error{
+    color: var(--color-text-a);
+    font-size: 1.5rem;
+    padding: 2rem;
+}

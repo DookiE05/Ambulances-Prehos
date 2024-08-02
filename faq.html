@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAA: Question Fréquentes</title>
+
+    <link rel="icon" type="image/png" href="./media/icon.png">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/recruit.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <link rel="stylesheet" href="./styles/faq.css">
+
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="top-line">
+            <!-- <div class="join-us-ctnr">
+                <button class="btn"><a class="join" href="recrutement.html">REJOINDRE NOTRE ÉQUIPE</a></button>
+                <button class="btn number"><a href="tel:+33607622257">06 07 62 22 57</a></button>
+            </div> -->
+        </div>
+
+        <div id="main-head">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="./media/logo.png" width="2033" height="542"
+                        alt="CTAQ : Coopérative des techniciens ambulanciers du Québec" id="logo"
+                        data-height-percentage="66">
+                </a>
+            </div>
+
+            <nav id="nav">
+                <ul class="mh-ul">
+                    <!-- <li class="mh-li"><a href="#wtmrsa">PRÉAMBULE</a></li> -->
+                    <!-- <li class="mh-li"><a href="index.html">ACCUEIL</a></li> -->
+                    <!-- <li class="mh-li"><a href="#job">EMPLOIS</a></li> -->
+                    <!-- <li class="mh-li"><a href="#intership">STAGES</a></li> -->
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <div id="faq">
+        <section id="job" class="section job-ctnr">
+            <h2>Questions Fréquentes</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button id="accordion-button-1" aria-expanded="false">
+                        <span class="accordion-title">
+                            Les ambulanciers sont-ils tenus de m'attendre sur place pendant ma consultation ?
+                        </span>
+                        <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>
+                            Non, conformément au <a href="https://sante.gouv.fr/fichiers/bo/2003/03-26/a0261839.htm" target="_blank" style="font-weight: bold;">circulaire du 10 juin 2023</a>, Transports Lieux de Résidence - Établissement de Santé, alinéa 9: <br><br>
+                            "L'ambulancier transmet à un membre de l'équipe soignante du service concerné tous les documents utiles à son hospitalisation, sa consultation, ses séances. Il transmet également la fiche de liaison, sauf en cas de transports itératifs où elle n'apparaît pas systématiquement nécessaire. A partir de ce moment, la prise en charge du patient incombe à l'établissement, notamment le brancardage inter services, les manipulations liées aux soins et examens."
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-2" aria-expanded="false">
+                        <span class="accordion-title">Nous sommes deux personnes à monter dans le taxi, le prix de la
+                            course est-il multiplié d’autant ?</span>
+                        <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>
+                            Certainement pas ! Le prix de la course est celui affiché sur le taximètre. Si la course est
+                            à 10 euros et que vous êtes deux passagers, cela vous coûtera toujours 10 euros au total.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-3" aria-expanded="false">
+                        <span class="accordion-title">Nous sommes deux personnes à monter dans le taxi, le prix de la
+                            course est-il multiplié d’autant ?</span>
+                        <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>
+                            Certainement pas ! Le prix de la course est celui affiché sur le taximètre. Si la course est
+                            à 10 euros et que vous êtes deux passagers, cela vous coûtera toujours 10 euros au total.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-4" aria-expanded="false">
+                        <span class="accordion-title">Nous sommes deux personnes à monter dans le taxi, le prix de la
+                            course est-il multiplié d’autant ?</span>
+                        <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>
+                            Certainement pas ! Le prix de la course est celui affiché sur le taximètre. Si la course est
+                            à 10 euros et que vous êtes deux passagers, cela vous coûtera toujours 10 euros au total.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-5" aria-expanded="false">
+                        <span class="accordion-title">Nous sommes deux personnes à monter dans le taxi, le prix de la
+                            course est-il multiplié d’autant ?</span>
+                        <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>
+                            Certainement pas ! Le prix de la course est celui affiché sur le taximètre. Si la course est
+                            à 10 euros et que vous êtes deux passagers, cela vous coûtera toujours 10 euros au total.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <div id="footerContainer"></div>
+    <script src="script.js"></script>
+
+    <script>
+        const items = document.querySelectorAll('.accordion button');
+
+        function toggleAccordion() {
+            const itemToggle = this.getAttribute('aria-expanded');
+
+            for (i = 0; i < items.length; i++) {
+                items[i].setAttribute('aria-expanded', 'false');
+            }
+
+            if (itemToggle == 'false') {
+                this.setAttribute('aria-expanded', 'true');
+            }
+        }
+
+        items.forEach((item) => item.addEventListener('click', toggleAccordion));
+    </script>
+</body>
+
+</html>

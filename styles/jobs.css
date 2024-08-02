@@ -1,0 +1,75 @@
+body{
+    background: #f1f1f1;
+}
+.job-desc{
+    position: relative;
+    display: block;
+    width: 60%;
+    height: auto;
+    min-height: 89vh;
+    margin: 0 auto;
+    top: 5vh;
+    overflow: hidden;
+}
+
+.job-desc h1{
+    font-size: 2rem;
+    margin-bottom: 2vh;
+    color: #2579E8;
+}
+.job-regions{
+    display: block;
+    width: 100%;
+    margin-bottom: 2vh;
+    padding-bottom: 2vh;
+    color: var(--color-text-a);
+    font-weight: 500;
+    border-bottom: 2px solid var(--global-yellow);
+}
+
+.job-desc-txt{
+    display: block;
+    width: 100%;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--main-blue);
+    padding-left: 10px;
+    border-left: 3px solid #2579E8;
+}
+
+.job-desc-ul{
+    font-size: 1vw;  /* j'ai changer rem en vw sur la tv*/
+    margin-left: 2rem;
+    margin-bottom: 5vh;
+    list-style-type: disc; /* Adding bullets */
+}
+.job-desc-ul :nth-child(n){
+    margin-bottom: 1vh;
+    font-weight: 500;
+    color: var(--main-blue);
+    white-space: nowrap;
+}
+
+.competences{
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 1vh;
+    white-space: nowrap;
+    color: var(--global-yellow);
+}
+.cp{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #2579E8;
+}
+.instruction{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--main-blue);
+    margin-bottom: 15vh;
+}
+.jb-email{
+    color: #2579E8;
+}
