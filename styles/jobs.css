@@ -39,17 +39,19 @@ body{
     border-left: 3px solid #2579E8;
 }
 
-.job-desc-ul{
-    font-size: 1vw;  /* j'ai changer rem en vw sur la tv*/
-    margin-left: 2rem;
+.job-desc-ul {
+    font-size: 1vw;
     margin-bottom: 5vh;
-    list-style-type: disc; /* Adding bullets */
+    list-style-type: disc;
+    list-style-position: outside;
+    margin-left: 2rem;
+    white-space: normal;
 }
 .job-desc-ul :nth-child(n){
     margin-bottom: 1vh;
     font-weight: 500;
     color: var(--main-blue);
-    white-space: nowrap;
+    
 }
 
 .competences{

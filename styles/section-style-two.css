@@ -1,5 +1,5 @@
 /* --------------SECTIONS---------- */
-.section{
+.section {
     position: relative;
     display: block;
     width: 100vw;
@@ -8,19 +8,21 @@
     background: none;
 }
 
-.main-cntr{
+.main-cntr {
     position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     width: 100%;
     height: 60vh;
-    justify-content: center;
     margin: 10vh;
     margin: auto;
     background: none;
-
 }
 
-.decor{
+.decor {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -29,13 +31,16 @@
     overflow: hidden;
     border-radius: 0;
 }
-#assu .decor{
+
+#assu .decor {
     border-bottom: 0.625rem solid #f1f1f1;
 }
-#vsl .decor{
+
+#vsl .decor {
     border-top: 0.625rem solid #f1f1f1;
 }
-.tt{
+
+.tt {
     position: absolute;
     width: 40%;
     height: 80%;
@@ -43,42 +48,45 @@
     top: 50%;
     transform: translateY(-50%);
 }
-.tt p{
+
+.tt p {
     display: block;
     margin-top: 1vh;
     font-size: 1rem;
     color: #333;
 }
-.bl-bold{
+
+.bl-bold {
     padding-left: 10px;
     border-left: 3px solid #2579E8;
     font-weight: 500;
     margin-bottom: 2vh;
 }
-  
-.bl-bold a{
+
+.bl-bold a {
     color: var(--mrsa-red);
     text-decoration: underline;
 }
-  
-.tt h4{
+
+.tt h2 {
     font-size: 2rem;
+    font-weight: 500;
     white-space: nowrap;
     color: #2579E8;
-    margin-bottom: 2vh;
 }
-  
-.tt ul{
+
+.tt ul {
     font-size: .9rem;
     padding-left: 1vw;
     color: #333;
 }
-.tt li{
-    margin-bottom: .5vh; 
+
+.tt li {
+    margin-bottom: .5vh;
 }
-  
-  
-.btnn{
+
+
+.btnn {
     position: absolute;
     display: inline-flex;
     justify-content: center;
@@ -95,15 +103,17 @@
     white-space: nowrap;
     cursor: pointer;
 }
-  
-  
-.btnn:hover{
+
+
+.btnn:hover {
     filter: brightness(1.05);
 }
-.lt{
+
+.lt {
     left: 4vw;
 }
-.image{
+
+.image {
     position: absolute;
     width: 50%;
     height: 100%;
@@ -111,14 +121,16 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    -webkit-box-shadow: 0 0 0 0 #000000; 
+    -webkit-box-shadow: 0 0 0 0 #000000;
     box-shadow: 0 0 0 0 #000000;
     z-index: 1;
     border-radius: 0;
 }
-.left{
+
+.left {
     left: 0;
 }
-.l{
+
+.l {
     right: 0;
 }

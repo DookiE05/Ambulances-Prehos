@@ -32,11 +32,10 @@ a{
 
 .main-ctnr {
   position: relative;
-  width: 100%;
+
   height: auto;
   background: #f1f1f1;
-  /* padding-bottom: 5vh; */  /*--enable for style 1*/
-  /* overflow: auto; */
+  overflow: hidden;
 }
 
 #diapo {
@@ -195,6 +194,7 @@ video {
   padding-bottom: 5vh;
 
 }
+
 /* --------------SECTIONS---------- */
 .section{
   position: relative;
@@ -221,7 +221,7 @@ video {
 .decor{
   position: absolute;
   width: 95%;
-  height: 90%;
+  height: 100%;
   background: #fff;
   bottom: 0;
   border-radius: 20px;
