@@ -252,7 +252,7 @@
     }
 
     .desc-btn a{
-        font-size: 33rem;
+        font-size: .7rem;
         font-weight: 500;
     }
 
@@ -268,7 +268,7 @@
         font-size: 1.3rem;
       }
 
-    .submenu a {
+    .submenu ul a{
         color: #fff;
         font-size: .9rem;
     }
