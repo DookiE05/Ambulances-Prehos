@@ -163,10 +163,6 @@ video {
   z-index: 1000;
 }
 
-
-
-
-
 /* --------------NAVIGATION---------- */
 #navigation {
   position: relative;
@@ -175,7 +171,7 @@ video {
   align-items: center;
   width: 100vw;
   height: auto;
-  /* background-color: #1A355E; */
+  min-height: 35vh;
   background: linear-gradient(135deg,var(--main-blue),#19478d);
   border-bottom: 1rem solid var(--global-yellow);
   font-size: 0;

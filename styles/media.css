@@ -70,11 +70,13 @@
     #diapo {
         height: 65vh;
     }
+
     .diapo-txt-cntr {
         bottom: 5vh;
         margin-left: 5vw;
         width: 90vw;
     }
+
     .mh-ul {
         display: none;
     }
@@ -107,9 +109,11 @@
         overflow: hidden;
         background: #f1f1f1;
     }
-    #assu .decor,  #vsl .decor {
+
+    #assu .decor,
+    #vsl .decor {
         border: none;
-        
+
     }
 
     .image {
@@ -145,7 +149,8 @@
         padding-left: 1rem;
         padding-right: 1rem;
     }
-    .tt h2{
+
+    .tt h2 {
         font-size: 1.4rem;
         font-weight: 700;
         padding-top: 3vh;
@@ -153,6 +158,7 @@
         white-space: normal;
 
     }
+
     .left {
         left: 0;
     }
@@ -160,8 +166,9 @@
     .l {
         right: 0;
     }
-    .tt p {
-        font-size: 1rem;
+
+    .tt p i {
+        font-size: 1.1rem;
     }
 
     .tt ul {
@@ -176,12 +183,14 @@
     }
 
     /* RECRUTEMENT */
-    .job-ctnr{
+    .job-ctnr {
         width: 95%;
     }
-    .job-list{
+
+    .job-list {
         width: 100%;
     }
+
     .wtm-article h4 {
         font-size: 1.2rem;
         white-space: nowrap;
@@ -193,29 +202,35 @@
     }
 
     /*JOBS*/
-    .job-desc{
+    .job-desc {
         width: 95%;
     }
-    .job-desc h1{
+
+    .job-desc h1 {
         font-size: 1.6rem;
         margin-bottom: .5vh;
     }
-    .job-regions{
+
+    .job-regions {
         font-size: .9rem;
     }
-    .cp{
+
+    .cp {
         font-size: 1.4rem;
     }
-    .job-desc-txt{
+
+    .job-desc-txt {
         font-size: 1rem;
     }
-    .job-desc-ul{
+
+    .job-desc-ul {
         font-size: 1rem;
     }
-    .instruction{
+
+    .instruction {
         font-size: 1rem;
     }
-    
+
     /* FOOTER */
     #infos {
         display: grid;
@@ -228,6 +243,7 @@
         font-size: 0;
         /* background: #000; */
     }
+
     .infos-ctnr {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: 1fr;
@@ -237,7 +253,7 @@
         padding: 1.2rem;
     }
 
-    .navbox-text-ctnr h3{
+    .navbox-text-ctnr h3 {
         font-size: 1.3rem;
     }
 
@@ -245,11 +261,11 @@
         font-size: .8rem;
     }
 
-    .desc-btn{
+    .desc-btn {
         width: 10rem;
     }
 
-    .desc-btn a{
+    .desc-btn a {
         font-size: .7rem;
         font-weight: 500;
     }
@@ -262,14 +278,15 @@
         padding: 0 0 0 5vw;
     }
 
-    .submenu span{
+    .submenu span {
         font-size: 1.3rem;
-      }
+    }
 
-    .submenu ul a{
+    .submenu ul a {
         color: #fff;
         font-size: .9rem;
     }
+
     .fa {
         padding-right: 2vw;
         font-size: .9rem;
