@@ -43,6 +43,8 @@
 }
 .join{
     color: #fff;
+    font-weight: 400;
+    
 }
 .join:hover{
     font-weight: 500;
@@ -121,6 +123,7 @@ h2{
 .mh-li a{
     transition: all .3s;
     color: #fff;
+    text-transform: uppercase;
 }
 .mh-li a:hover{
     color: var(--global-yellow);

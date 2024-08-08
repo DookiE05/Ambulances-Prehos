@@ -8,6 +8,22 @@
     overflow-y: hidden;
     background: #f1f1f1;
 }
+.faq-ctnr{
+    position: relative;
+    display: block;
+    width: 65%;
+    height: 85%;
+    margin: 0 auto;
+    top: 5vh;
+    margin-bottom: 15vh;
+}
+.faq-ctnr h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+    border-bottom: 2px solid var(--global-yellow);
+    color: var(--main-blue);
+    padding: 1rem 0 1rem 0;
+}
 .accordion{
     margin: 0 auto;
     width: 100%;
@@ -39,7 +55,7 @@
 .accordion button:hover,
 .accordion button:focus {
     cursor: pointer;
-    color: #2579E8;
+    color: #333;
 }
 
 .accordion button:hover::after,
@@ -101,11 +117,6 @@
     transition: all 200ms linear;
     background: #e9fff3;
     will-change: opacity, max-height;
-}
-.accordion #accordion-button-2[aria-expanded='true']+.accordion-content {
-    opacity: 1;
-    max-height: 50em;
-    transition: all 500ms linear;
 }
 
 .accordion .accordion-content {
