@@ -234,10 +234,10 @@ video {
   top: 50%;
   transform: translateY(-50%);
 }
-.tt p{
+.tt p i{
   display: block;
   margin-top: 1vh;
-  font-size: 0.7vw;
+  font-size: 1.1rem;
   color: #333;
 }
 .bl-bold{
@@ -257,8 +257,9 @@ video {
 
 .tt h2{
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 700;
   white-space: nowrap;
+  padding-bottom: 3vh;
   color: #2579E8;
 }
 
@@ -270,7 +271,6 @@ video {
 .tt li{
   margin-bottom: .5vh; 
 }
-
 
 .btnn{
   position: absolute;
@@ -290,7 +290,6 @@ video {
   cursor: pointer;
 }
 
-
 .btnn:hover{
   filter: brightness(1.05);
 }
@@ -305,10 +304,8 @@ video {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   right: 0;
   border-radius: 20px;
-
   -webkit-box-shadow: 5px 5px 15px 5px #000000; 
   box-shadow: 2px 2px 35px 2px #000000;
   z-index: 1;

@@ -146,8 +146,10 @@
         padding-right: 1rem;
     }
     .tt h2{
-        font-size: 1.3rem;
-        padding-top: 2vh;
+        font-size: 1.4rem;
+        font-weight: 700;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
         white-space: normal;
 
     }
@@ -229,10 +231,10 @@
     .infos-ctnr {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: 1fr;
-        grid-column-gap: 1vw;
-        grid-row-gap: 2vw;
-        margin: 0 auto;
+        grid-column-gap: 0;
+        grid-row-gap: 0;
         margin-bottom: 3vh;
+        padding: 1.2rem;
     }
 
     .navbox-text-ctnr h3{
@@ -240,11 +242,7 @@
     }
 
     .navbox-p {
-        display: block;
-        margin-top: 1vh;
         font-size: .8rem;
-        font-weight: 500;
-        padding-left: 1vw;
     }
 
     .desc-btn{
@@ -260,7 +258,7 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 2fr;
         grid-column-gap: 0;
-        grid-row-gap: 1vh;
+        grid-row-gap: 0;
         padding: 0 0 0 5vw;
     }
 
@@ -279,7 +277,7 @@
 
 }
 
-@media (max-width: 425px) {
+@media (max-width: 385px) {
 
     /* HEADER */
     .top-line {
@@ -389,15 +387,3 @@
 
 
 }
-
-/* @media (max-width: 320px) {
-    .main-cntr{
-        height: 55vh;
-    }
-    .image{
-        height: 20vh;
-    }
-    .decor{
-        height: 35vh;
-    }
-} */
