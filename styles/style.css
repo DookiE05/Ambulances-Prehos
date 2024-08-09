@@ -32,7 +32,6 @@ a{
 
 .main-ctnr {
   position: relative;
-
   height: auto;
   background: #f1f1f1;
   overflow: hidden;
@@ -201,6 +200,30 @@ video {
   background: none;
   /* margin-bottom: 4vh; */
   margin-top: 4vh;
+}
+.sectionTitleCtnr{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+  font-size: 3vw;
+  color: var(--main-blue);
+  border-bottom: 2px solid var(--global-yellow);
+  margin-bottom: 2vh;
+  z-index: 10;
+}
+.sectionTitle{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.sectionTitleIcon{
+  position: relative;
+  font-size: 10rem;
+  color: #fff;
+  z-index: -10;
 }
 
 .main-cntr{

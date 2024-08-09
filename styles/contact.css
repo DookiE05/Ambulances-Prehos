@@ -8,31 +8,6 @@
     overflow-y: hidden;
     background: #f1f1f1;
 }
-.tt-ctnr{
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: auto;
-    font-size: 3vw;
-    color: var(--main-blue);
-    border-bottom: 5px solid var(--global-yellow);
-    margin-bottom: 2vh;
-    z-index: 10;
-}
-.tt-ctnr span{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2.5rem;
-    font-weight: 500;
-}
-.envelope{
-    position: relative;
-    font-size: 10vw;
-    color: #fff;
-    z-index: -10;
-}
-
 .container{
     position: relative;
     display: block;

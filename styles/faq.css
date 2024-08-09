@@ -17,13 +17,8 @@
     top: 5vh;
     margin-bottom: 15vh;
 }
-.faq-ctnr h2{
-    font-size: 2.5rem;
-    font-weight: 500;
-    border-bottom: 2px solid var(--global-yellow);
-    color: var(--main-blue);
-    padding: 1rem 0 1rem 0;
-    white-space: nowrap;
+.faqQuestionIcon{
+    padding: 1rem;
 }
 .accordion{
     margin: 0 auto;
@@ -148,9 +143,6 @@
 @media (max-width: 768px) {
     .faq-ctnr{
         width: 95%;
-    }
-    .faq-ctnr h2{
-        font-size: 1.6rem;
     }
     .accordion .accordion-content p {
         font-size: .9rem;

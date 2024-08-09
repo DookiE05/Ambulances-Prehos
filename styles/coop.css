@@ -1,0 +1,19 @@
+#coop{
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: auto;
+    min-height: 90vh;
+    overflow-y: scroll;
+    overflow-y: hidden;
+    background: #f1f1f1;
+}
+.coop-ctnr{
+    position: relative;
+    display: block;
+    width: 65%;
+    height: 85%;
+    margin: 0 auto;
+    top: 5vh;
+    margin-bottom: 15vh;
+}
