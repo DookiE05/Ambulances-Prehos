@@ -30,7 +30,7 @@ a{
   color: var(--main-blue);
 }
 
-.main-ctnr {
+#root {
   position: relative;
   height: auto;
   background: #f1f1f1;
