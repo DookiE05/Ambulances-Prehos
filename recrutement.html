@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAA: Emplois et Stage</title>
+    <title>ParaXion : Carrières</title>
 
     <script src="https://kit.fontawesome.com/0a591b8e22.js" crossorigin="anonymous"></script>
+
+    <meta name="description" content="Coopérative des ambulancièrs du Grand Ouest: Emplois et Stage.">
 
     <link rel="icon" type="image/png" href="./media/icon.png">
     <link rel="stylesheet" href="./styles/style.css">
@@ -28,15 +30,26 @@
             </div>
 
             <div id="main-head">
-                <div class="logo-container">
-                    <a href="index.html">
-                        <img src="./media/logo.png" width="2033" height="542"
-                            alt="CTAQ : Coopérative des techniciens ambulanciers du Québec" id="logo"
-                            data-height-percentage="66">
+
+                <div id="mobile-nav-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div id="mobile-nav-img">
+                    <a href="#index">
+                        <img src="./media/paraxion_white.png"
+                            alt="CTAQ : Coopérative des techniciens ambulanciers du Québec" id="logo">
                     </a>
                 </div>
 
                 <nav id="nav">
+                    <div class="logo-container">
+                        <a href="index.html">
+                            <img src="./media/paraxion_white.png" width="2033" height="542"
+                                alt="CTAQ : Coopérative des techniciens ambulanciers du Québec" id="logo"
+                                data-height-percentage="66">
+                        </a>
+                    </div>
                     <ul class="mh-ul">
                         <li class="mh-li"><a href="index.html">accueil</a></li>
                         <li class="mh-li"><a href="faq.html">questions fréquentes</a></li>
@@ -48,13 +61,14 @@
         </header>
 
         <div id="recruit">
+
             <section id="job" class="section job-ctnr">
                 <h2>Postes disponibles</h2>
                 <!--<p class="job-error">Actuellement, aucune offre d'emploi n'est disponible.</p>-->
                 <ul class="job-list">
                     <li class="job">
-                        <div class="job-title"><a href="./jobs/ambulancier-ere.html">Ambulancier.ère Diplômé.e d'État <i
-                                    class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                        <div class="job-title dea"><a href="./jobs/ambulancier-ere.html">Ambulancier.ère Diplômé.e
+                                d'État <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
                         <div class="job-date">
                             <p>25 Fev 2024</p>
                         </div>
@@ -99,7 +113,19 @@
 
             <section id="intership" class="section job-ctnr">
                 <h2>Stages</h2>
-                <p class="job-error">Actuellement, aucune offre de stage n'est disponible.</p>
+                <!-- <p class="job-error">Actuellement, aucune offre de stage n'est disponible.</p> -->
+                <ul class="job-list">
+                    <li class="job">
+                        <div class="job-title"><a href="./jobs/intership.html">Stage d'observation <i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                        <div class="job-date">
+                            <p>25 Fev 2024</p>
+                        </div>
+                        <div class="job-regions">
+                            <p>Secteurs | Ille-et-Vilaine, Côtes d'Armor, Morbihan, Finistère</p>
+                        </div>
+                    </li>
+                </ul>
             </section>
         </div>
 
@@ -108,4 +134,5 @@
         <script src="script.js"></script>
     </div>
 </body>
+
 </html>

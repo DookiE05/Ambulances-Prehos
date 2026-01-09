@@ -1,4 +1,4 @@
-#coop {
+#mentions-legales{
     position: relative;
     display: block;
     width: 100vw;
@@ -8,8 +8,7 @@
     overflow-y: hidden;
     background: #f1f1f1;
 }
-
-.coop-ctnr {
+.mention-ctnr{
     position: relative;
     display: block;
     width: 65%;
@@ -19,10 +18,14 @@
     margin-bottom: 15vh;
 }
 
+#mentions-editeur{
+    list-style-type: none;
+}
+
 .coop-desc {
     position: flex;
     justify-content: center;
-    align-items: center;
+    align-self: center;
     width: 100%;
     height: auto;
     top: 2vh;
@@ -32,21 +35,27 @@
 .coopArticle {
     padding: 1rem;
     margin-top: 1vh;
-    width: 50%;
-    min-height: 35vh;
+    width: 100%;
     height: auto;
-    border-radius: 5px;
     overflow: hidden;
 }
 
-.coopArticle:nth-child(even){
-    margin-left: 35%;
+.coopArticle ul, ol, mention-p{
+    color: var(--main-blue);
 }
+
+.noDot {
+    list-style-type: none;
+}
+.mts-h4{
+    margin-top: 1rem;
+}
+
 .coop-subtitle {
     display: inline-block; /* Ajuste la largeur à celle du texte */
     width: 100%;
     color: #2579E8;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: -0.03rem;
     margin: 0; /* Supprime la marge externe */
@@ -60,10 +69,6 @@
     font-weight: 500;
     color: #2579E8; /* Assurez-vous que la couleur est bien appliquée */
     animation: blinkCursor 1s steps(1) infinite;
-}
-
-.typewriter-cursor:nth-child(even){
-    color: #f1f1f1;
 }
 
 /* Animation du curseur clignotant */
@@ -81,15 +86,9 @@
     margin-top: 3vh;
 }
 
-.bg-light{
-    background: linear-gradient(135deg, #f1f1f1, #8ca6d1);
-
-
-}
 .bg-blue-dark{
     /* background: #161F46; */
-    /* background: var(--main-blue); */
-    background: linear-gradient(135deg,var(--main-blue),#19478d);
+    background: var(--main-blue);
 }
 
 .bg-blue-dark h3, .bg-blue-dark p{

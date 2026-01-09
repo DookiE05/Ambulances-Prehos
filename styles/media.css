@@ -1,6 +1,5 @@
 :root {
     --header-top-line-text-size: 1rem;
-
     --main-blue: #1A355E;
     --blue-two: #19478d;
     --icon-blue: #89B8CB;
@@ -21,14 +20,6 @@
         display: block;
     }
 
-    /* Afficher l'image pour les formats mobiles */
-    .mobile-image {
-        display: none;
-        width: 100%;
-        height: 150vh;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
 }
 
 @media (max-width: 1200px) {
@@ -49,48 +40,96 @@
         display: none;
     }
 
-    /* Afficher l'image pour les formats mobiles */
     .mobile-image {
         display: block;
-        width: 100%;
-        height: 100vh;
-        background-size: cover;
-        background-repeat: no-repeat;
     }
+
 }
 
 @media (max-width: 768px) {
+
+    /*GLOBAL*/
+    .mention-ctnr,
+    .coop-ctnr,
+    .job-desc,
+    .job-ctnr {
+        width: 95%;
+    }
 
     /* HEADER */
     .top-line {
         display: none;
     }
 
-    /* DIAPO */
-    #diapo {
-        height: 65vh;
+    #main-head {
+        position: fixed;
+        padding: 0;
     }
 
-    .diapo-txt-cntr {
-        bottom: 5vh;
-        margin-left: 5vw;
-        width: 90vw;
+    .logo-container {
+        width: 115%;
     }
 
-    .mh-ul {
+    #logo {
+        width: 35%;
+        height: auto;
+        padding: 0;
+    }
+
+    #nav {
         display: none;
     }
 
-    #arrow {
-        width: 8vw;
+    #main-head{
+        display: flex;
+        justify-content: left;
     }
 
+    #mobile-nav-img,
+    #mobile-nav-icon {
+        display: flex;
+    }
+
+    /* DIAPO */
+    #diapo {
+        height: 35vh;
+        border: none;
+        margin-top: 0;
+    }
+
+    .mobile-image {
+        display: block;
+    }
+
+    .diapo-txt-cntr {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        bottom: 1vh;
+        padding: 15px;
+        overflow: hidden;
+    }
+
+    .diapo-txt-cntr h1 {
+        font-size: 1.2rem;
+    }
+
+    .diapo-txt-cntr h2 {
+        font-size: .7rem;
+        font-weight: 500;
+    }
+
+    #arrow,
+    video {
+        display: none;
+    }
 
     /* NAVIGATION */
     #navigation {
-        height: auto;
+        min-height: 1vh;
         border-bottom: solid .5rem var(--global-yellow);
     }
+
 
     /* SECTION */
     .section {
@@ -183,10 +222,6 @@
     }
 
     /* RECRUTEMENT */
-    .job-ctnr {
-        width: 95%;
-    }
-
     .job-list {
         width: 100%;
     }
@@ -202,10 +237,6 @@
     }
 
     /*JOBS*/
-    .job-desc {
-        width: 95%;
-    }
-
     .job-desc h1 {
         font-size: 1.6rem;
         margin-bottom: .5vh;
@@ -231,6 +262,21 @@
         font-size: 1rem;
     }
 
+    /* job and recruits */
+    .dea{
+        font-size: 1.3rem!important;
+    }
+
+    /*CONTACT*/
+    .form-img{
+        display: none;
+    }
+    .form {
+        width: 100%;
+    }
+    input, select, textarea {
+        width: 95%;
+    }
     /* FOOTER */
     #infos {
         display: grid;
@@ -255,21 +301,29 @@
         font-size: 1.3rem;
     }
 
+    #nav-box-tt{
+        padding-left: .5rem;
+      }
+
     .navbox-p {
         font-size: .8rem;
     }
 
-    .desc-btn {
+    .desc-btn, .aboutBtn {
         width: 10rem;
     }
 
-    .desc-btn a {
+
+
+    .desc-btn a , .aboutBtn a{
         font-size: .7rem;
         font-weight: 500;
     }
-    .infosgrid{
+
+    .infosgrid {
         padding: 15px;
     }
+
     .infos-ctnr-r {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 2fr;
@@ -279,6 +333,9 @@
 
     .submenu span {
         font-size: 1.3rem;
+    }
+    .submenu ul {
+        margin-top: 1.3vh;
     }
 
     .submenu ul a {
@@ -291,115 +348,33 @@
         font-size: .9rem;
     }
 
+    #social-container ul {
+        padding: 0;
+    }
+
+    /* COOP */
+    .coopArticle{
+        width: 100%;
+    }
+    .coop-subtitle{
+        font-size: 1.9rem;
+        line-height: 1.1;
+    }
 }
 
-@media (max-width: 385px) {
+@media (max-width: 400px) {
 
-    /* HEADER */
-    .top-line {
-        display: none;
-    }
-
-    #main-head h1 {
-        font-size: 1rem;
-    }
-
-    .title-cntr {
-        margin-left: 5vw;
-    }
-
-    .mh-ul {
-        display: none;
-    }
-
-    /* MAIN */
-    .main-ctnr {
-        padding-bottom: 0vh;
-    }
-
-    /* DIAPO */
-    #diapo {
-        height: 58vh;
-    }
-
-    /* Cacher la vidéo pour les formats mobiles */
-    video {
-        display: none;
-    }
-
-    /* Afficher l'image pour les formats mobiles */
-    .mobile-image {
-        display: block;
-    }
-
-    .diapo-txt-cntr {
-        bottom: 5vh;
-        margin-left: 5vw;
-        width: 90vw;
-    }
-
-    .diapo-btn {
-        font-size: 3vw;
-        font-weight: 500;
-        width: 40vw;
-    }
-
-    #arrow {
-        width: 15vw;
-        font-size: 6vw;
-    }
-
-
-    /* NAVIGATION */
-    #navigation {
+    /*Header*/
+    #logo {
+        width: 50%;
         height: auto;
-        border-bottom: solid .8rem var(--global-yellow);
     }
 
-
-    /* TOOLS */
-    #msg {
-        height: 7vh;
+    /*Footer*/
+    .infos-ctnr-r {
+        grid-template-columns: repeat(1, 2fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0;
+        grid-row-gap: 4vh;
     }
-
-    .msg-text {
-        font-size: 3vw;
-    }
-
-    .construct {
-        font-size: 3vw;
-    }
-
-
-    /* RECRUTEMENT */
-    .job-ctnr h2 {
-        font-size: 2rem;
-    }
-
-    .job-title a {
-        font-size: 1.1rem;
-        color: #2579E8;
-    }
-
-    .job-date {
-        font-size: .6rem;
-    }
-
-    .job-regions {
-        font-size: .6rem;
-    }
-
-    .wtm-article h4 {
-        font-size: 1.2rem;
-        white-space: normal;
-        margin-bottom: 3vh;
-
-    }
-
-    .wtm-article p {
-        font-size: .7rem;
-        color: #333;
-    }
-
-
 }

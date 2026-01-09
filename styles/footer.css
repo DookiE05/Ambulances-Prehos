@@ -1,5 +1,7 @@
 footer {
   position: relative;
+  display: flex;
+  justify-content: center;
   width: 100vw;
   height: auto;
   padding-bottom: 5vh;
@@ -10,7 +12,7 @@ footer {
 /* FOOTER INFORMATIONS  */
 #infos{
   display: grid;
-  width: 100%;
+  width: 95%;
   height: auto;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
@@ -18,6 +20,7 @@ footer {
   grid-row-gap: 0px;
   font-size: 0;
 }
+
 .infos-ctnr{
   display: grid;
   width: 100%;
@@ -41,7 +44,7 @@ footer {
   height: 100%;
   color: #fff;
 }
-.navbox-text-ctnr h3{
+.navbox-text-ctnr .title{
   font-size: 2rem;
   display: block;
   margin-top: 1vh;
@@ -91,7 +94,7 @@ footer {
   grid-column-gap: 1vw;
   grid-row-gap: 1vw;
   margin: 0 auto;
-  padding-top: 4vh;
+  padding: 2vw;
 
 
 }
@@ -128,4 +131,37 @@ footer {
   padding-right: .5vw;
   font-size: 1vw;
   color: var(--icon-blue);
+}
+
+#social-container{
+  position: relative;
+  width: auto;
+  height: 5vh;
+  margin-top: 2vh;
+}
+#social-container ul{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: auto;
+  height: 100%;
+  padding: 0 15px 0 15px;
+}
+#social-container ul li a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  margin-left: 15px;
+  background: #fff;
+  border-radius: 5px;
+}
+.fa-social{
+  font-size: 1.2rem;
+  overflow: hidden;
+  color: var(--icon-blue);
+}
+.socialNames{
+  display: none;
 }

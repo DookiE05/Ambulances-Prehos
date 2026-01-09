@@ -53,8 +53,14 @@
     height: 85%;
     margin: 0 auto;
     top: 5vh;
-    margin-bottom: 15vh;
+    
     /* background: #000; */
+}
+#job{
+    margin-bottom: 5vh;
+}
+#intership{
+    margin-bottom: 15vh;
 }
 .job-ctnr h2{
     font-size: 2.5rem;
@@ -111,4 +117,202 @@
     color: var(--color-text-a);
     font-size: 1.5rem;
     padding: 2rem;
+}
+
+.map-container{
+    width: 100%;
+    background: none;
+    padding: 1rem;
+}
+
+.m-locations__map {
+    position: relative;
+    width: 60%;
+    background: none;
+    padding: 1.5rem;
+}
+
+.svg-map-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 132.17391304%
+}
+
+.svg-map-container .svg-map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0
+}
+
+.svg-map {
+    display: block
+}
+
+.svg-map:focus {
+    box-shadow: none!important
+}
+
+.svg-map__circle__dot {
+    r: 4.5px;
+    stroke-width: 6;
+    stroke: #124B9A;
+    stroke-opacity: .15;
+    fill: transparent
+}
+
+.svg-map__circle rect,.svg-map__pin rect {
+    fill: #f1f1f1
+}
+
+.js .svg-map__circle__dot {
+    transition: all 1s cubic-bezier(.175,.885,.32,1.275);
+    transition-delay: .3s;
+    r: 0;
+    stroke-width: 0
+}
+
+.js .svg-map .svg-map__row g:nth-child(1) .svg-map__circle__dot {
+    transition-delay: 325ms
+}
+
+.js .svg-map .svg-map__row g:nth-child(2) .svg-map__circle__dot {
+    transition-delay: 350ms
+}
+
+.js .svg-map .svg-map__row g:nth-child(3) .svg-map__circle__dot {
+    transition-delay: 375ms
+}
+
+.js .svg-map .svg-map__row g:nth-child(4) .svg-map__circle__dot {
+    transition-delay: .4s
+}
+
+.js .svg-map .svg-map__row g:nth-child(5) .svg-map__circle__dot {
+    transition-delay: 425ms
+}
+
+.js .svg-map .svg-map__row g:nth-child(6) .svg-map__circle__dot {
+    transition-delay: 450ms
+}
+
+.js .svg-map .svg-map__row g:nth-child(7) .svg-map__circle__dot {
+    transition-delay: 475ms
+}
+
+.js .svg-map .svg-map__row g:nth-child(8) .svg-map__circle__dot {
+    transition-delay: .5s
+}
+
+.js .svg-map .svg-map__row g:nth-child(9) .svg-map__circle__dot {
+    transition-delay: 525ms
+}
+
+.js .svg-map .svg-map__row g:nth-child(10) .svg-map__circle__dot {
+    transition-delay: 550ms
+}
+
+.js .svg-map .svg-map__row g:nth-child(11) .svg-map__circle__dot {
+    transition-delay: 575ms
+}
+
+.js .svg-map .svg-map__row g:nth-child(12) .svg-map__circle__dot {
+    transition-delay: .6s
+}
+
+.js .svg-map .svg-map__row g:nth-child(13) .svg-map__circle__dot {
+    transition-delay: 625ms
+}
+
+.js .svg-map .svg-map__row g:nth-child(14) .svg-map__circle__dot {
+    transition-delay: 650ms
+}
+
+.js .svg-map .svg-map__row g:nth-child(15) .svg-map__circle__dot {
+    transition-delay: 675ms
+}
+
+.js .svg-map .svg-map__row g:nth-child(16) .svg-map__circle__dot {
+    transition-delay: .7s
+}
+
+.js .svg-map .svg-map__row g:nth-child(17) .svg-map__circle__dot {
+    transition-delay: 725ms
+}
+
+.js .svg-map .svg-map__row g:nth-child(18) .svg-map__circle__dot {
+    transition-delay: 750ms
+}
+
+.js .svg-map .svg-map__row g:nth-child(19) .svg-map__circle__dot {
+    transition-delay: 775ms
+}
+
+.js .svg-map .svg-map__row g:nth-child(20) .svg-map__circle__dot {
+    transition-delay: .8s
+}
+
+.js .svg-map--visible .svg-map__circle__dot {
+    r: 4.5px;
+    stroke-width: 6
+}
+
+.svg-map__circle:hover .svg-map__circle__dot {
+    r: 4px;
+    stroke-width: 4;
+    stroke-opacity: .1;
+    transition-duration: .4s;
+    transition-delay: 0s!important
+}
+
+.svg-map__pin__circle {
+    r: 7px;
+    stroke-width: 10;
+    stroke: #124B9A;
+    stroke-opacity: .15;
+    fill: #0C499C;
+    animation: pulseDot 1s infinite;
+    animation-timing-function: ease-out;
+    transition: all .4s cubic-bezier(.19,1,.22,1)
+}
+
+.js .svg-map__pin__circle {
+    transition: all 1s cubic-bezier(.175,.885,.32,1.275);
+    transition-delay: .3s;
+    r: 0;
+    stroke-width: 0
+}
+
+.js .svg-map--visible .svg-map__pin__circle {
+    r: 7px;
+    stroke-width: 10
+}
+
+.svg-map__pin:hover {
+    cursor: pointer
+}
+
+.svg-map__pin:hover .svg-map__pin__circle {
+    transition: all .4s cubic-bezier(.175,.885,.32,1.275);
+    r: 15px;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1
+}
+
+.svg-map__pin:active .svg-map__pin__circle {
+    fill: #08336d
+}
+
+@keyframes pulseDot {
+    0%,100% {
+        stroke-width: 10
+    }
+
+    30% {
+        stroke-width: 0
+    }
 }

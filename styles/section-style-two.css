@@ -85,7 +85,6 @@
     margin-bottom: .5vh;
 }
 
-
 .btnn {
     position: absolute;
     display: inline-flex;
@@ -104,33 +103,37 @@
     cursor: pointer;
 }
 
-
 .btnn:hover {
     filter: brightness(1.05);
 }
 
 .lt {
-    left: 4vw;
+    left: 2vw;
 }
 
 .image {
     position: absolute;
     width: 50%;
     height: 100%;
-    background: #000;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     -webkit-box-shadow: 0 0 0 0 #000000;
     box-shadow: 0 0 0 0 #000000;
     z-index: 1;
+    right: 0;
     border-radius: 0;
 }
 
-.left {
+.left{
     left: 0;
+    background-image: url(../media/ems.png);
 }
 
-.l {
+.right{
+    background-image: url(../media/mrsa-1.avif);
+}
+
+.l{
     right: 0;
 }

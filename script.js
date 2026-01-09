@@ -1,40 +1,6 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////                                            TEST                                            //////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-const slideWrapper = document.querySelector('.slide-wrapper');
-let currentSlide = 0;
-
-function nextSlide() {
-  currentSlide++;
-  if (currentSlide > 3) {
-    currentSlide = 0;
-  }
-  slideWrapper.style.marginLeft = `-${currentSlide * 100}%`;
-}
-
-// Démarre le diaporama
-const interval = setInterval(nextSlide, 10000); // Changement toutes les 10 secondes
-
-// Arrête le diaporama après avoir affiché toutes les images une fois
-setTimeout(() => {
-  clearInterval(interval);
-}, 40000); // Le diaporama s'arrête après 40 secondes (10 secondes par image)
-
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////                                    IMPORT HEADER AND FOOTER                                //////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    // Récupérer le contenu de header.html
-    fetch('header.html')
-    .then(response => response.text())
-    .then(data => {
-        // Insérer le contenu dans le conteneur
-        document.getElementById('headerContainer').innerHTML = data;
-    })
-    .catch(error => {
-        console.log('Une erreur s\'est produite :', error);
-    });
-
     fetch('footer.html')
     .then(response => response.text())
     .then(data => {
@@ -84,76 +50,49 @@ divs.forEach((div, index) => {
   });
 });
 
+function typeWriterEffect(element, text, speed = 50) {
+  let index = 0;
+  const cursor = document.createElement('span');
+  cursor.className = 'typewriter-cursor';
+  cursor.textContent = '_';
+  element.appendChild(cursor);
 
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////Trigger a function when the user scrolls the element into the viewport – Vanilla JavaScript //////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Get the an HTML element
-var element = document.querySelector('#navigation');
-
-// Get its bounding client rectangle
-var bounding = element.getBoundingClientRect();
-
-function isInViewport(element) {
-    // Get the bounding client rectangle position in the viewport
-    var bounding = element.getBoundingClientRect();
-    
-    // Checking part. Here the code checks if it's *fully* visible
-    // Edit this part if you just want a partial visibility
-    if (
-        bounding.top >= 0 &&
-        bounding.left >= 0 &&
-        bounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
-        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-    ) {
-
-
-
-        // console.log('In the viewport! :)');
-
-
-
-        return true;
-        
-    } else {
-        // console.log('Not in the viewport. :(');
-        return false;
-    }
-}
-
-
-var counters = document.querySelectorAll('.counter');
-var speed = 400;
-var triggered = false;
-
-function animateCounter(counter, target) {
-  var count = 0;
-  var inc = Math.ceil(target / speed);
-
-  var timer = setInterval(function() {
-    count += inc;
-
-    if (count >= target) {
-      clearInterval(timer);
-      count = target;
-    }
-
-    counter.innerText = count.toLocaleString();
-  }, 1);
-}
-
-window.addEventListener('scroll', function(event) {
-  if (isInViewport(element) && triggered === false) {
-    triggered = true;
-    counters.forEach(function(counter) {
-      var target = +counter.getAttribute('data-target');
-      animateCounter(counter, target);
-    });
+  function writeCharacter() {
+      if (index < text.length) {
+          element.textContent = text.substring(0, index + 1); // Ajoute le texte au fur et à mesure
+          element.appendChild(cursor); // Réattache le curseur après chaque mise à jour
+          index++;
+          setTimeout(writeCharacter, speed);
+      } else {
+          //cursor.classList.add('finished'); // Stop le clignotement du curseur
+      }
   }
-}, false);
+  writeCharacter();
+}
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function isVisibleInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight);
+}
+
+function initTypewriterAnimation() {
+  const elements = document.querySelectorAll('.anim-typewriter');
+
+  elements.forEach((element) => {
+      const text = element.textContent.trim(); // Récupérer le texte original
+      element.textContent = ''; // Vider le contenu pour l'animation
+
+      function checkVisibility() {
+          if (isVisibleInViewport(element)) {
+              window.removeEventListener('scroll', checkVisibility);
+              typeWriterEffect(element, text);
+          }
+      }
+
+      window.addEventListener('scroll', checkVisibility);
+      checkVisibility();
+  });
+}
+
+
+document.addEventListener('DOMContentLoaded', initTypewriterAnimation);
